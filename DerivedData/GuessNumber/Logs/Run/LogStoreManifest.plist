@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>11FE1903-18FC-4C67-890A-5EAC25F988B5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>11FE1903-18FC-4C67-890A-5EAC25F988B5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GuessNumber project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GuessNumber</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run GuessNumber</string>
+			<key>timeStartedRecording</key>
+			<real>637382499.29741395</real>
+			<key>timeStoppedRecording</key>
+			<real>637382828.79371202</real>
+			<key>title</key>
+			<string>Run GuessNumber</string>
+			<key>uniqueIdentifier</key>
+			<string>11FE1903-18FC-4C67-890A-5EAC25F988B5</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

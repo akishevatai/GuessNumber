@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ap7-ue-mKh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guess Number-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyY-DF-ySX">
+                                <rect key="frame" x="40" y="488" width="70" height="57"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="34"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hgc-EP-4Zf" kind="show" identifier="easy" id="8e5-rg-BJc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUX-pC-b6z">
+                                <rect key="frame" x="303" y="488" width="71" height="57"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="34"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEH-bw-w7T"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zj-8j-0JE">
+                                <rect key="frame" x="40" y="176" width="334" height="193"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Hi, Welcome to the "Guess Number" game, the goal of this game is to guess the number  that game will secretly give you. You will have two levels as an option to choose."Easy Level has 10 Lives to get the secret  number right", and "Hard Level where you will have only 5 lives to get the secret number right" , Good Luck! and Enjoy!</string>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWn-l1-tt3">
+                                <rect key="frame" x="100" y="439" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WyY-DF-ySX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="19w-W3-5c1"/>
+                            <constraint firstItem="1zj-8j-0JE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="4FS-5x-D7d"/>
+                            <constraint firstItem="1zj-8j-0JE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="A09-La-oBb"/>
+                            <constraint firstItem="WyY-DF-ySX" firstAttribute="top" secondItem="1zj-8j-0JE" secondAttribute="bottom" constant="119" id="NCA-C9-qkb"/>
+                            <constraint firstItem="kWn-l1-tt3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="NPd-Mb-fis"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vUX-pC-b6z" secondAttribute="trailing" constant="40" id="UkA-Vg-GJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWn-l1-tt3" secondAttribute="trailing" constant="100" id="VJJ-o6-WYv"/>
+                            <constraint firstItem="vUX-pC-b6z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="aUe-27-chU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zj-8j-0JE" secondAttribute="trailing" constant="40" id="ek8-eQ-zJ5"/>
+                            <constraint firstItem="kWn-l1-tt3" firstAttribute="top" secondItem="1zj-8j-0JE" secondAttribute="bottom" constant="70" id="fuD-ol-lMf"/>
+                            <constraint firstItem="WyY-DF-ySX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="qNG-i3-09r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guess Number" id="g29-RY-sNh"/>
+                    <connections>
+                        <outlet property="easyButton" destination="WyY-DF-ySX" id="OU5-xy-bok"/>
+                        <outlet property="hardButton" destination="vUX-pC-b6z" id="vQh-jl-4IB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
+        </scene>
+        <!--Easy View Controller-->
+        <scene sceneID="DSV-i3-i6I">
+            <objects>
+                <viewController id="Hgc-EP-4Zf" customClass="EasyViewController" customModule="GuessNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QdA-AJ-6ET">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i89-rR-rqR">
+                                <rect key="frame" x="134.5" y="606" width="145.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.316791249" blue="0.0" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX ..... XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbO-Y9-JSA">
+                                <rect key="frame" x="147" y="352" width="120.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess number " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="441-J1-iub">
+                                <rect key="frame" x="149" y="218" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcf-HF-gf7">
+                                <rect key="frame" x="191.5" y="500" width="31" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.46187392980000003" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="okButtonPressed:" destination="Hgc-EP-4Zf" eventType="touchUpInside" id="qQV-mw-cxt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBh-Wp-V61">
+                                <rect key="frame" x="157" y="431" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Mbz-cN-DmT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the number between " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFG-ow-vGW">
+                                <rect key="frame" x="96" y="275" width="222.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vl-oz-srL">
+                                <rect key="frame" x="187" y="679.5" width="40" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YZH-nC-a0D"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jbO-Y9-JSA" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="8AA-4a-n8G"/>
+                            <constraint firstItem="7vl-oz-srL" firstAttribute="top" secondItem="i89-rR-rqR" secondAttribute="bottom" constant="50" id="DVs-35-Ywf"/>
+                            <constraint firstItem="lcf-HF-gf7" firstAttribute="top" secondItem="yBh-Wp-V61" secondAttribute="bottom" constant="35" id="HBC-mX-IR6"/>
+                            <constraint firstItem="i89-rR-rqR" firstAttribute="top" secondItem="lcf-HF-gf7" secondAttribute="bottom" constant="68" id="HPh-AY-7ga"/>
+                            <constraint firstItem="441-J1-iub" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="J6C-QS-tqD"/>
+                            <constraint firstItem="vFG-ow-vGW" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="LBF-ZX-673"/>
+                            <constraint firstItem="yBh-Wp-V61" firstAttribute="centerY" secondItem="QdA-AJ-6ET" secondAttribute="centerY" id="Mg0-za-9bK"/>
+                            <constraint firstItem="jbO-Y9-JSA" firstAttribute="top" secondItem="441-J1-iub" secondAttribute="bottom" constant="113" id="Pbt-QO-IGH"/>
+                            <constraint firstItem="vFG-ow-vGW" firstAttribute="top" secondItem="441-J1-iub" secondAttribute="bottom" constant="36" id="TSV-CG-zgB"/>
+                            <constraint firstItem="441-J1-iub" firstAttribute="top" secondItem="YZH-nC-a0D" secondAttribute="top" constant="130" id="gUX-45-ewM"/>
+                            <constraint firstItem="i89-rR-rqR" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="i2r-ds-37K"/>
+                            <constraint firstItem="yBh-Wp-V61" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="skl-vM-GkV"/>
+                            <constraint firstItem="lcf-HF-gf7" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="xTw-py-Qmc"/>
+                            <constraint firstItem="7vl-oz-srL" firstAttribute="centerX" secondItem="QdA-AJ-6ET" secondAttribute="centerX" id="y9V-tF-rct"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o2y-VZ-mgW"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="i89-rR-rqR" id="jws-xF-xbq"/>
+                        <outlet property="numGuessesLbl" destination="441-J1-iub" id="dcE-nw-Qx2"/>
+                        <outlet property="numberTextField" destination="yBh-Wp-V61" id="amy-YX-JoP"/>
+                        <outlet property="rangeLbl" destination="jbO-Y9-JSA" id="9OU-on-nje"/>
+                        <outlet property="showLivesLabel" destination="7vl-oz-srL" id="p6U-AO-gtp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWC-SE-KzC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895.6521739130437" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZHh-q3-mBS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ap7-ue-mKh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kcC-5V-QjU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CKc-uz-szC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gX6-Xo-aRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

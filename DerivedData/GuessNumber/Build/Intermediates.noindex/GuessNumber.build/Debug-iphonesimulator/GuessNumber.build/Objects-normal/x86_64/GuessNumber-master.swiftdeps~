@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "8122f569f4d13afc661819cfc304f3ec"
+build_time: [1615689690, 774520000]
+inputs:
+  "/Users/ataiakishev/Desktop/GuessNumber/GuessNumber/EasyViewController.swift": [1615689688, 799729937]
+  "/Users/ataiakishev/Desktop/GuessNumber/GuessNumber/ViewController.swift": [1614809294, 353691446]
+  "/Users/ataiakishev/Desktop/GuessNumber/GuessNumber/AppDelegate.swift": [1613795384, 72618194]
+  "/Users/ataiakishev/Desktop/GuessNumber/GuessNumber/SceneDelegate.swift": [1614809028, 86560981]
